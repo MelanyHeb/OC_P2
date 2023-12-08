@@ -1,23 +1,26 @@
-/****** General ***********/
+/******************************** General **************************************/
 * {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif; /* Police du site */
 }
 
+/* Variable CSS couleurs */
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
-
+/* Couleur des icones FontAwesome */
 .fa-solid {
     color: var(--main-color);
 }
-
+/* FlexBox du Body */
 body {
     display: flex;
     justify-content: center;
+   
 }
 
+/* Style du Main */
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -25,16 +28,18 @@ body {
     box-sizing: border-box;
 }
 
+/* Style des liens */
 a {
     color: inherit;
     text-decoration: none;
 }
 
+/* Style des Titres H2 */
 .section-title {
     margin: 0;
     font-size: 22px;
 }
-
+/* Style des Cards */
 .card {
     background-color: white;
     border-radius: 20px;
@@ -42,6 +47,7 @@ a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+/* Stye des images des Cards */
 .card img {
     object-fit: cover;
 }
@@ -54,11 +60,66 @@ a {
     font-weight: 700;
 }
 
+/* Etoile score, couleur du Main*/
 .neutral-star {
     color: var(--main-bg-color)
 }
 
-/****** Hebergements And Populaires ***********/
+
+/****************************** Header *************************************/
+
+/* Flexbox Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60%;
+    align-self: stretch;
+    }
+    
+    /* Flexbox Logo du site */
+    .logo-du-site {
+        width: 61.09px;
+        height: 19px;
+        display: flex;
+        padding: 20px 50px 30px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+       
+    }
+    /* Flexbox de la Navigation */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 68px;  
+    }
+    
+    /* Flexbox des liens de navigation */
+    .listes-liens-navigation {
+    text-decoration: none;
+    color: #000;
+    
+    list-style-type: none; /*Supression des puces*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 68px;
+    }
+    
+    /* Ajout de la barre et de la couleur des liens au survol */
+    .lien-hebergements :hover , .lien-activites :hover {
+
+        color: var(--main-color); /* Nouvelle couleur du texte au survol */
+        border-top: solid;
+        padding-top: 20px; /* Décalage de la barre vers le haut*/
+     
+    }
+  
+
+
+
+/******************************* Hebergements And Populaires *****************/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -71,12 +132,12 @@ a {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/******************************** Hebergements ******************************/
 .hebergements {
     width: 65%;
 }
 
-/****** Populaires ***********/
+/******************************** Populaires ********************************/
 .populaires {
     width: 32%;
 }
@@ -163,5 +224,14 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    .lien-hebergements :hover , .lien-activites :hover {
+
+        color: var(--main-color); /* Nouvelle couleur du texte au survol */
+        border-top: none;
+        border-bottom: solid;
+        padding-top: 20px; /* Décalage de la barre vers le haut*/
+
+
     /* ... */
-}
+}}
