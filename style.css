@@ -271,6 +271,7 @@ margin: 17px 0px ;
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    height: 625px;
  
 }
 
@@ -349,7 +350,9 @@ object-fit: cover;
 }
 
 
-
+.afficher-plus {
+    margin-top: 10px;
+}
 
 
 
