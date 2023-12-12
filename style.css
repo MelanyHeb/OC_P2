@@ -290,9 +290,9 @@ border: 5px solid var(--White, #FFF);
     object-fit: cover;
 }
 
-/******************************** Hebergements ******************************/
+/******************************** Hebergements ***********************************/
 .hebergements {
-width: 65%;
+width: 70%;
 display: flex;
 padding: 30px;
 flex-direction: column;
@@ -307,6 +307,14 @@ flex: 1 0 0;
     justify-content: space-between;
     align-items: center;
 }
+
+.section-cards {
+    display: flex;
+    gap: 30px;
+
+}
+
+
 
 .card-hebergement {
     display:flex;
