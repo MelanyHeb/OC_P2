@@ -143,8 +143,7 @@ line-height: normal;
     flex-direction: column;
     align-items: flex-start;
     gap: 35px;
-    align-self: stretch;
-   
+    align-self: stretch; 
 }
 
 .formulaire {
@@ -282,7 +281,7 @@ margin: 17px 0px ;
     box-sizing: border-box;
 }
 
-.card-hebergement img {
+.card-heb img {
     height: 124px;
 align-self: stretch;
 border-radius: 20px 20px 0px 0px;
@@ -309,15 +308,14 @@ flex: 1 0 0;
     align-items: center;
 }
 
-.section-cards {
+.cards-section {
     display: flex;
     gap: 30px;
 
 }
 
 
-
-.card-hebergement {
+.card-heb {
     display:flex;
     height: 190px;
     width: 250px;
@@ -330,7 +328,7 @@ flex: 1 0 0;
 }
 
 
-.hebergement-cards img {
+.hebergements-cards img {
 height: 110px;
 object-fit: cover;
 }
@@ -340,11 +338,11 @@ object-fit: cover;
     padding-top: 4px;
 }
 
-.hebergement-cards .card-title {
+.hebergements-cards .card-title {
     margin: 0px;   
 }
 
-.hebergement-cards .card-subtitle {
+.hebergements-cards .card-subtitle {
     margin: 0;
     padding: 8px 0px;
 }
