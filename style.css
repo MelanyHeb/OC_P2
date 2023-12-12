@@ -46,31 +46,16 @@ a {
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
-.card-hebergement {
-    
-    padding-bottom: 15px;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    flex: 1 0 0; 
-    border-radius: 20px;
-    background: #FFF;
 
-/* Shadow/Card */
-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10); 
+.card-subtitle {
+    font-size: 13px;
 }
+
 /* Stye des images des Cards */
 .card img {
     object-fit: cover;
 }
-.card-hebergement img {
-    height: 124px;
-align-self: stretch;
-border-radius: 20px 20px 0px 0px;
-border: 5px solid var(--White, #FFF);
 
-    object-fit: cover;
-}
 .card-title {
     font-size: 16px;
 }
@@ -285,6 +270,8 @@ margin: 17px 0px ;
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
+ 
 }
 
 .hebergements-and-populaires section {
@@ -294,10 +281,70 @@ margin: 17px 0px ;
     box-sizing: border-box;
 }
 
+.card-hebergement img {
+    height: 124px;
+align-self: stretch;
+border-radius: 20px 20px 0px 0px;
+border: 5px solid var(--White, #FFF);
+
+    object-fit: cover;
+}
+
 /******************************** Hebergements ******************************/
 .hebergements {
-    width: 65%;
+width: 65%;
+display: flex;
+padding: 30px;
+flex-direction: column;
+align-items: flex-start;
+gap: 30px;
+flex: 1 0 0;
+
 }
+
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-hebergement {
+    display:flex;
+    height: 190px;
+    width: 250px;
+    padding-bottom: 15px;
+    flex-direction: column;
+    flex: 1 0 0; 
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10); 
+}
+
+
+.hebergement-cards img {
+height: 110px;
+object-fit: cover;
+}
+
+.card-content-hebergements {
+    padding-left: 15px;
+    padding-top: 4px;
+}
+
+.hebergement-cards .card-title {
+    margin: 0px;   
+}
+
+.hebergement-cards .card-subtitle {
+    margin: 0;
+    padding: 8px 0px;
+}
+
+
+
+
+
+
 
 /******************************** Populaires ********************************/
 .populaires {
