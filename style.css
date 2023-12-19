@@ -131,7 +131,6 @@ margin-bottom: 8px;
 
 .texte {
 font-size: 16px;
-font-style: normal;
 font-weight: 400;
 line-height: normal;
 margin: 0px;
@@ -162,7 +161,6 @@ background: var(--White, #FFF);
 .formulaire ::placeholder {
 color: var(--Black, #000);
 font-size: 17px;
-font-style: normal;
 font-weight: 700;
 line-height: normal;
 
@@ -417,6 +415,7 @@ object-fit: cover;
 
 .card-txt-act {
 padding: 0px 19px;
+
 }
 
 /********************************* Footer *******************************/
@@ -457,19 +456,10 @@ font-size : 18px
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
@@ -482,7 +472,7 @@ font-size : 18px
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     .populaires-cards {
@@ -502,21 +492,63 @@ font-size : 18px
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activities {
+        width: 100%;
+        margin-top: 370px;
+        
+    }
+
+    .card-act {
+    
+        height: 260px;
+        }
+        
+        .activities-section img {
+        height: 190px;
+        width: 185px ;
+        object-fit: cover;
+        }
+
+    .card-title  {
+    font-size: 14px;
+}
+
 }
 
 /* Small devices (phones, less than 768px) */
+
 @media (max-width: 767.98px) {
+
+    .main-container {
+        padding : 0px 20px ; 
+    }
+
+    .logo-du-site {
+        padding: 20px;   
+        }
+
+        .listes-liens-navigation {
+    padding : 0px;
+    gap : 120px;
+    border-bottom: solid;
+    padding-bottom: 15px;
+    color: var(--main-bg-color)
+        }
+
+ .lien-hebergements  , .lien-activites {
+    color : black
+
+ }
 
     .lien-hebergements :hover , .lien-activites :hover {
 
         color: var(--main-color); /* Nouvelle couleur du texte au survol */
         border-top: none;
         border-bottom: solid;
-        padding-top: 20px; /* Décalage de la barre vers le haut*/
-
-        
-    /* ... */
+        padding-bottom: 15px;
 }
+
 .button{
     display: none;
 }
@@ -527,4 +559,16 @@ font-size : 18px
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
+header {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
 }
