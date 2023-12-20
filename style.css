@@ -109,11 +109,16 @@ color: #000;
 list-style-type: none; /*Supression des puces*/
 display: flex;
 gap: 68px;
+margin : 0 ;
 }
-    
-/* Ajout de la barre et de la couleur des liens au survol */
 
-.lien-hebergements :hover , .lien-activites :hover {
+/* Ajout de la barre et de la couleur des liens au survol */
+.lien-hebergements , .lien-activites {
+padding-top: 20px;
+
+}
+
+.lien-hebergements:hover , .lien-activites:hover {
 
 color: var(--main-color); /* Nouvelle couleur du texte au survol */
 border-top: solid;
@@ -458,7 +463,16 @@ font-size : 18px
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
+
+
+
+
+
+
+
 /****** Media queries ***********/
+
+
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
@@ -520,56 +534,116 @@ font-size : 18px
 
 @media (max-width: 767.98px) {
 
-    .main-container {
-        padding : 0px 20px ; 
+    header {
+        flex-direction: column;
+        align-items: center;
     }
 
-    
+    body {
+        margin:0px;
+    }
+
+    .main-container {
+        padding : 0; 
+    }
 
     .logo-du-site {
         padding: 20px;   
-        }
+    }
 
-        .listes-liens-navigation {
-    padding : 0px;
-    gap : 120px;
-    border-bottom: solid;
-    padding-bottom: 15px;
-    color: var(--main-bg-color)
-        }
+    nav {
+        width: 100%;
+      
+    }
 
- .lien-hebergements  , .lien-activites {
-    color : black
+    .listes-liens-navigation {
+    width: 100%;    
+    border-bottom: solid; /* ajout de la barre grise sous les liens */
+    color: var(--main-bg-color);
+    padding: 0px;
+    gap : 0px;
+    
+    }
 
+    .lien-hebergements:hover , .lien-activites:hover {
+        color: var(--main-color); 
+        border-top:none; /* supression de la barre du dessus au survol */
+        border-bottom: solid; /* ajout de la barre sous le texte au survol */
+        padding-bottom: 35px;
+    }
+    
+    .lien-hebergements {
+    color : black;
+    width: 300px;
+    padding: 20px 30px 20px 30px;
+    justify-content: center;
  }
 
-    .lien-hebergements :hover , .lien-activites :hover {
-
-        color: var(--main-color); /* Nouvelle couleur du texte au survol */
-        border-top: none;
-        border-bottom: solid;
-        padding-bottom: 15px;
+    .lien-activites {
+    color : black;
+    width: 300px;
+    padding: 20px 20px 20px 50px;
 }
 
-.button{
+    .formulaire {
+    width: 292px;
+}
+
+    .button{ /* supression bouton de recherche */
     display: none;
 }
 
-.fa-magnifying-glass::before {
+    .fa-magnifying-glass::before { /* ajout de l'icone loupe  */
     background-color: #0065FC;
     padding: 15px 16px;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-header {
-    flex-direction: column;
-    align-items: center;
+
+    .section-formulaire-de-recherche {
+    padding:  10px;
+    height: 500px;
+
+}
+
+ .section-filtres {
+    margin : 0px ;
+    padding: 0px;
+    flex-wrap: wrap;
+ } 
+
+ .info {
+    margin-top: 100px ;
+    padding: 0px;
+    font-size: 15px;
+ }
+
+.section-filtres h3 {
+    margin : 0px 600px 0px 0px;
+}
+
+.filtres {
+    width: 34%;
+    
+}
+
+.police-filtres {
+   font-size: 14px;
 }
 
 
+/* Hebergements and Populaires */
 
+.hebergements-and-populaires {
+    flex-direction: column-reverse;
+    margin-top: 375px;
 
+}
+.hebergements-and-populaires section {
+    border-radius: 0px;
+
+}
 
 
 
