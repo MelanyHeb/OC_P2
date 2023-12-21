@@ -466,6 +466,7 @@ font-size : 18px
         width: 100%;
     }
 
+    
     .populaires {
         width: 100%;
         margin-top: 20px;
@@ -489,25 +490,36 @@ font-size : 18px
         font-size: 13px;
     }
 
+    .card-heb {
+        width: 258px; }
+
+    
     .activities {
+        box-sizing: border-box;
         width: 100%;
         margin-top: 370px;
     }
 
     .card-act {
-    
         height: 260px;
-    }
-        
-    .activities-section img {
-        height: 190px;
-        width: 185px ;
-        object-fit: cover;
+        width: 185px;
     }
 
+    .activities-section {
+        width: auto;
+    }
+
+      .activities-section img {
+        height: 200px;
+        width: 100px ;
+    }
+    
     .card-title  {
         font-size: 14px;
     }
+   
+    .cards-activities img {
+        width: 100%;}
 
 }
 
@@ -657,7 +669,6 @@ font-size : 18px
 /* Activities */
 
 .activities {
-    width: 85% ;
     margin : 0px; 
 }
 
@@ -668,17 +679,13 @@ font-size : 18px
     gap : 15px ;
 }
 
-.cards-activities {
-    width: 100%;
-}
-
 .cards-activities img {
-    width: 100%;
     height: 70%;
 }
 
 .card-act {
     height: 200px;
+    width: auto;
 }
 
 /* Footer */
