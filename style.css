@@ -19,13 +19,11 @@ color: var(--main-color);
 /* FlexBox Body */
 
 body {
-display: flex;
-justify-content: center;
+max-width: 1440px;
 }
+
 /* Style Main */
 .main-container {
-width: 100%;
-max-width: 1440px;
 padding: 0 50px;
 box-sizing: border-box; 
 }
@@ -48,6 +46,7 @@ font-size: 22px;
 
 .card {
 background-color: white;
+height: 135px;
 border-radius: 20px;
 padding: 5px;
 filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -181,8 +180,6 @@ background-color: #F2F2F2;
 /******************************** Filtres *************************************/
 .section-filtres {
 display: flex;
-align-items: center;
-display: flex;
 height: 50px;
 align-items: center;
 gap: 15px;
@@ -204,7 +201,6 @@ line-height: normal;
 }
 .filtres {
 display: flex;
-align-items: center;
 height: 40px;
 padding: 4px 19px;
 align-items: center;
@@ -253,9 +249,8 @@ object-fit: cover;
 
 .hebergements {
 background-color: var(--main-bg-color);
-width: 70%;
+width: 100%;
 display: flex;
-padding: 30px;
 flex-direction: column;
 align-items: flex-start;
 gap: 30px;
@@ -267,19 +262,27 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
+
 .cards-section {
-display: flex;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
 gap: 30px;
+width: 100%;
+
 }
 
+.hebergements-cards {
+    width: 100%;
+    min-width: 100%;
+}
 
 .card-heb {
 display:flex;
 height: 190px;
-width: 250px;
+width: auto;
 padding-bottom: 15px;
 flex-direction: column;
-flex: 1 0 0; 
+flex: 1 1 0; 
 border-radius: 20px;
 background: #FFF;
 box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10); 
@@ -287,11 +290,11 @@ box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
 
 .hebergements-cards img {
 height: 110px;
+min-height: 100px;
 object-fit: cover;
 }
 .card-content-hebergements {
-padding-left: 15px;
-padding-top: 4px;
+padding : 4px 4px 0px 15px
 }
 .hebergements-cards .card-title {
 margin: 0px;   
@@ -300,6 +303,8 @@ margin: 0px;
 margin: 0;
 padding: 8px 0px;
 }
+
+
 .afficher-plus {
 margin-top: 10px;
 }
@@ -318,7 +323,7 @@ margin-top: 10px;
 }
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 30px;
 }
 .populaires-cards img {
     width: 33%;
@@ -352,18 +357,25 @@ padding: 30px;
 
 .activities-section {
 display: flex;
+width: 100%;
 gap: 30px;
 padding: 30px 30px 30px 0px;
 } 
+
+.cards-activities {
+    width: 100%;
+}
+
 .card-act {
 height: 439px;
+width: auto;
 border-radius: 20px 20px 20px 20px;
 background: #FFF;
 box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10); 
 }
 .activities-section img {
 height: 380px;
-width: 290px ;
+width: 100% ;
 border-radius: 20px 20px 0px 0px;
 object-fit: cover;
 }
