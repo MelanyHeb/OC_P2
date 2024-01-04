@@ -19,13 +19,16 @@ color: var(--main-color);
 /* FlexBox Body */
 
 body {
-max-width: 1440px;
+    display: flex;
+    justify-content: center;
 }
 
 /* Style Main */
 .main-container {
+width: 100%;
+max-width: 1440px;
 padding: 0 50px;
-box-sizing: border-box; 
+box-sizing: border-box;
 }
 
 /* Style des liens */
@@ -97,7 +100,9 @@ list-style-type: none; /*Supression des puces*/
 display: flex;
 gap: 68px;
 margin : 0 ;
+padding: 0;
 }
+
 /* Ajout de la barre et de la couleur des liens au survol */
 .lien-hebergements , .lien-activites {
 padding-top: 20px;
