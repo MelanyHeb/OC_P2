@@ -80,7 +80,6 @@ color: var(--main-bg-color)
 header {
 display: flex;
 justify-content: space-between;
-gap: 60%;
 }
 
 .logo-du-site {
@@ -429,10 +428,9 @@ font-size : 18px
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
+        height: auto;
     }
-    .hebergements {
-        width: 100%;
-    }
+   
     .populaires {
         width: 100%;
         margin-top: 20px;
@@ -453,32 +451,27 @@ font-size : 18px
         font-size: 13px;
     }
     .card-heb {
-        width: 250px; } 
+        width: auto; } 
 
     .activities {
         box-sizing: border-box;
         width: 100%;
-        margin-top: 370px;
     }
+
     .card-act {
         height: 260px;
-        width: 185px;
     }
-    .activities-section {
-        width: auto;
-    }
+
 
     .activities-section img {
         height: 200px;
-        width: 100px ;
+        
     }
     
     .card-title  {
         font-size: 14px;
     }
    
-    .cards-activities img {
-        width: 100%;}
 }
 
 
@@ -520,14 +513,14 @@ font-size : 18px
     .lien-hebergements {
         color : black;
         width: 300px;
-        padding: 20px 30px 20px 30px;
+        padding: 20px 50px 20px 30px;
         justify-content: center;
     }
 
     .lien-activites {
         color : black;
         width: 300px;
-        padding: 20px 20px 20px 50px;
+        padding: 20px 55px 20px 50px;
     }
 
     .formulaire {
@@ -552,14 +545,13 @@ font-size : 18px
     }
 
     .section-filtres {
-        margin : 0px  ;
         padding: 0px;
         flex-wrap: wrap;
         gap : 20px;
+        height: auto;
     } 
 
     .info {
-        margin-top: 120px ;
         padding: 0px;
         font-size: 15px;
     }
@@ -581,8 +573,8 @@ font-size : 18px
 
 .hebergements-and-populaires {
     flex-direction: column-reverse;
-    margin-top: 1435px;
     gap : 5px;
+    height: auto;
 }
 
 .hebergements-and-populaires section {
@@ -596,7 +588,7 @@ font-size : 18px
 }
 
 .cards-section {
-    flex-direction: column;
+    grid-template-columns : 1fr;
     width: 100%;
     gap :15px;
 }
@@ -619,7 +611,8 @@ font-size : 18px
 .populaires-cards {
     gap : 0;
     flex-direction: column;
-    width: 330%;
+    width: 100%;
+    display: block;
 }
 
 .populaires-cards .card {
