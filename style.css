@@ -11,12 +11,10 @@
 }
 
 /* FontAwesome */
-
 .fa-solid {
 color: var(--main-color);
 }
 
-/* FlexBox Body */
 
 body {
     display: flex;
@@ -24,14 +22,14 @@ body {
 }
 
 /* Style Main */
+
 .main-container {
 width: 100%;
 max-width: 1440px;
-padding: 0 50px;
+padding: 0 30px;
 box-sizing: border-box;
 }
 
-/* Style des liens */
 
 a {
 color: inherit;
@@ -57,7 +55,7 @@ filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 .card-subtitle {
 font-size: 13px;
 }
-/* Stye images des Cards */
+
 .card img {
 object-fit: cover;
 }
@@ -197,6 +195,12 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 }
+
+.block-filtres {
+    display: flex;
+    gap: 15px;
+}
+
 .police-filtres {
 font-size: 17px;
 font-style: normal;
@@ -205,6 +209,7 @@ line-height: normal;
 }
 .filtres {
 display: flex;
+justify-content: center;
 height: 40px;
 padding: 4px 19px;
 align-items: center;
@@ -467,12 +472,29 @@ font-size : 18px
         height: 200px;
         
     }
+
+    .activities-section {
+        gap: 20px;
+    }
     
     .card-title  {
         font-size: 14px;
     }
+
+    .section-filtres {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        gap: 0;
+    }
+
+    .police-filtres {
+        font-size: 16px;
+    }
+
+    }
    
-}
+
 
 
 /* Small devices (phones, less than 768px) */
@@ -550,10 +572,14 @@ font-size : 18px
 
     .section-filtres {
         padding: 0px;
-        flex-wrap: wrap;
         gap : 20px;
         height: auto;
     } 
+
+    .block-filtres {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     .info {
         padding: 0px;
