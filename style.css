@@ -103,6 +103,7 @@ padding: 0;
 /* Ajout de la barre et de la couleur des liens au survol */
 .lien-hebergements , .lien-activites {
 padding-top: 20px;
+border-top: solid transparent;
 }
 
 .lien-hebergements:hover , .lien-activites:hover {
@@ -520,33 +521,23 @@ font-size : 18px
 
     .listes-liens-navigation {
         width: 100%;    
-        border-bottom: solid; /* ajout de la barre grise sous les liens */
-        color: var(--main-bg-color);
         padding: 0px;
         gap : 0px;
     }
 
     .lien-hebergements:hover , .lien-activites:hover {
-        color: var(--main-color); 
-        border-top:none; /* supression de la barre du dessus au survol */
-        border-bottom: solid; /* ajout de la barre sous le texte au survol */
+        border-top:none; 
+        border-bottom: solid 2px var(--main-color); /* ajout de la barre sous le texte au survol */
         padding-bottom: 35px;
     }
 
-    .lien-hebergements {
+    .lien-hebergements , .lien-activites {
         color : black;
         width: 100%;
-        flex: 1 ;
         padding: 20px 30px ; 
         text-align: center;
-    }
-
-    .lien-activites {
-        color : black;
-        width: 100%;
-        flex: 1 ;
-        padding: 20px 30px ; 
-        text-align: center;
+        border-top: none;
+        border-bottom: solid var(--main-bg-color); /* ajout de la barre grise sous les liens */
     }
 
     .formulaire {
@@ -609,6 +600,7 @@ font-size : 18px
 
 .hebergements-and-populaires section {
     border-radius: 0px; 
+    padding : 20px
 }
 
 .hebergements {
@@ -674,6 +666,24 @@ font-size : 18px
 footer {
 flex-direction: column;
 margin-top: 35px;
+}
+
+}
+
+@media (max-width: 345px) {
+
+.fa-magnifying-glass::before {
+margin-left: 0;
+}
+
+.formulaire {
+gap: 20px;
+width: 282px;
+}
+
+.block-filtres {
+ gap : 10px
+
 }
 
 }
